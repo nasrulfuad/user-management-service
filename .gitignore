@@ -1,0 +1,10 @@
+# Dependencies
+/node_modules
+# scripts builded
+/dist
+# environtments
+.env
+# sqlite
+/prisma/db.sqlite
+/prisma/db.sqlite-journal
+/public/uploads

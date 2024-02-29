@@ -133,6 +133,7 @@ The file structure of a web application is a crucial aspect of organizing and ma
 ## Documentation
 
 - **`README.md`**: Project overview and documentation.
+- **`collection-postman.json`**: Api documentation file.
 
 ## Build Scripts
 

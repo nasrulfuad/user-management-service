@@ -1,0 +1,152 @@
+{
+  "info": {
+    "_postman_id": "4249b661-7870-404d-86b8-f9b64f287c31",
+    "name": "User Management Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6550664"
+  },
+  "item": [
+    {
+      "name": "register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "key",
+            "value": "HiJhvL$T27@1u^%u86g",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "John Doe",
+              "type": "text"
+            },
+            {
+              "key": "address",
+              "value": "Street name 111",
+              "type": "text"
+            },
+            {
+              "key": "email",
+              "value": "john@email.com",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "123321",
+              "type": "text"
+            },
+            {
+              "key": "creditcard_type",
+              "value": "VISA",
+              "type": "text"
+            },
+            {
+              "key": "creditcard_number",
+              "value": "4263982640269299",
+              "type": "text"
+            },
+            {
+              "key": "creditcard_name",
+              "value": "Creditard 1",
+              "type": "text"
+            },
+            {
+              "key": "creditcard_expired",
+              "value": "02/2026",
+              "type": "text"
+            },
+            {
+              "key": "creditcard_cvv",
+              "value": "837",
+              "type": "text"
+            },
+            {
+              "key": "photos",
+              "type": "file",
+              "src": "/Users/nasrulfuad/Downloads/denji1.png"
+            },
+            {
+              "key": "photos",
+              "type": "file",
+              "src": "/Users/nasrulfuad/Downloads/denji2.png"
+            }
+          ]
+        },
+        "url": {
+          "raw": "localhost:3000/user/register",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["user", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "find-one",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "key",
+            "value": "HiJhvL$T27@1u^%u86g",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:3000/user/15ef5561-ec5c-4d6b-ba6d-266b5ef33925",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["user", "15ef5561-ec5c-4d6b-ba6d-266b5ef33925"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "list",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "key",
+            "value": "HiJhvL$T27@1u^%u86g",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:3000/user/list?q=&ob=name&sb=asc&of=0&lt=50",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["user", "list"],
+          "query": [
+            {
+              "key": "q",
+              "value": ""
+            },
+            {
+              "key": "ob",
+              "value": "name"
+            },
+            {
+              "key": "sb",
+              "value": "asc"
+            },
+            {
+              "key": "of",
+              "value": "0"
+            },
+            {
+              "key": "lt",
+              "value": "50"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
